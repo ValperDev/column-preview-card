@@ -6,10 +6,23 @@
     --very-light-gray: hsl(0, 0%, 95%);
 }
 
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("./fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("./fonts/BigShouldersDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
     margin: 0;
     padding: 0;
 }
