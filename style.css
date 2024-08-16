@@ -22,6 +22,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    color: var(--transparent-white);
     font-family: "Lexend Deca", sans-serif;
     margin: 0;
     padding: 0;
@@ -37,15 +38,80 @@ body {
     min-height: 100dvh;
 }
 
+h2 {
+    color: var(--very-light-gray);
+}
+
+
 img {
     display: block;
     max-width: 100%;
 }
 
 main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     min-height: 100dvh;
 }
 
 ul {
     list-style: none;
+}
+
+.vehicle-section {
+    max-width: 48rem;
+}
+
+.vehicle-section__container {
+    display: flex;
+}
+
+.vehicle-section__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2.5em;
+}
+
+.vehicle-section__sedan {
+    background-color: var(--bright-orange);
+}
+
+.vehicle-section__suvs {
+    background-color: var(--dark-cyan);
+}
+
+.vehicle-section__luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.vehicle-section__title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.vehicle-section__description {
+    line-height: 1.4;
+}
+
+.vehicle-section__link {
+    background-color: var(--very-light-gray);
+    border-radius: 30px;
+    padding: .8em 1.6em;
+    margin-top: 2.5em;
+}
+
+.vehicle-section__sedan .vehicle-section__link {
+    color: var(--bright-orange);
+}
+
+.vehicle-section__suvs .vehicle-section__link {
+    color: var(--dark-cyan);
+}
+
+.vehicle-section__luxury .vehicle-section__link {
+    color: var(--very-dark-cyan);
 }
